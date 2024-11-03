@@ -42,7 +42,10 @@ SimObject('QoSPolicy.py', sim_objects=[
     'QoSPolicy', 'QoSFixedPriorityPolicy', 'QoSPropFairPolicy'])
 SimObject('QoSTurnaround.py', sim_objects=[
     'QoSTurnaroundPolicy', 'QoSTurnaroundPolicyIdeal'])
+    
+SimObject('CustomQoSPolicy.py', sim_objects=['StaticQoSPolicy', 'DynamicQoSPolicy'])
 
+  
 Source('policy.cc')
 Source('policy_fixed_prio.cc')
 Source('policy_pf.cc')
@@ -50,3 +53,5 @@ Source('turnaround_policy_ideal.cc')
 Source('q_policy.cc')
 Source('mem_ctrl.cc')
 Source('mem_sink.cc')
+Source('custom_policy.cc') 
+
